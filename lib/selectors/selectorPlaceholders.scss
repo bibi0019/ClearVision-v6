@@ -663,7 +663,7 @@
 .messagesErrorBar-1IQ1rH {
   @extend %messagesErrorBar !optional;
 }
-.bar-2qGj24 {
+.bar-wDIGjg {
   @extend %barBrand !optional;
 }
 .wrapper-1gVUIN {
@@ -763,6 +763,9 @@
 }
 .actionRed-gYn8D3 {
   @extend %chatGatedActionRed !optional;
+}
+.resizeHandle-PBRzPC {
+  @extend %chatResize !optional;
 }
 .emptyChannelIcon-1YdEz2 {
   @extend %emptyChannelIcon !optional;
@@ -3785,20 +3788,14 @@ pre {
 .replying-eZ7p5z {
   @extend %replyingToIndicator !optional;
 }
-.item-2idW98 {
+.item-1TA5qI {
   @extend %radioItem !optional;
 }
-.radioBar-3w9XY- {
+.radioBar-1XgZqD {
   @extend %radioBar !optional;
 }
-.radioIconForeground-2BMavi {
+.radioIconForeground-3wH3aU {
   @extend %radioIconChecked !optional;
-}
-.radioText-3Mv1MY {
-  @extend %radioText !optional;
-}
-.info-2FZci4 {
-  @extend %radioInfo !optional;
 }
 .userSettingsVoice-1fEtsL {
   @extend %userSettingsVoice !optional;
@@ -4465,6 +4462,15 @@ pre {
 }
 .headerBorder-jrk0Ic {
   @extend %forumHeaderBorder !optional;
+}
+.sortDropdown-hY93nR {
+  @extend %forumSortDropdown !optional;
+}
+.sortDropdownText-3smleu {
+  @extend %forumSortDropdownText !optional;
+}
+.textContentFooter-2JnNv8 {
+  @extend %forumContentFooter !optional;
 }
 .pill-3pRQlO {
   @extend %forumTag !optional;
