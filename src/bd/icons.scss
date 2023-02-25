@@ -32,7 +32,7 @@
     @each $i,
     $j in $vencord {
       &.vencord-#{$i}-tab:before {
-        background-image: url(#{$u});
+        background-image: url(#{$j});
      }
     }
   }
