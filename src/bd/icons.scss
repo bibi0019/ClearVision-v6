@@ -31,7 +31,7 @@
     }
     @each $i,
     $j in $vencord {
-      &.vencord-#{$i}-tab:before {
+      &.vencord-css-core#{$i}-tab:before {
         background-image: url(#{$j});
      }
     }
