@@ -13,14 +13,6 @@
     'themes': 'https://clearvision.github.io/icons/palette.svg'
   );
 
-  // VENCORD ICON MAP
-  $vencord: ( //Settings
-    // Plugins
-    'plugins': 'https://clearvision.github.io/icons/puzzle.svg',
-    //Themes
-    'themes': 'https://clearvision.github.io/icons/palette.svg'
-  );
-
   // BD ICON STYLES
   %tabBarItem {
     @each $i,
@@ -28,12 +20,6 @@
       &.bd-#{$i}-tab:before {
         background-image: url(#{$u});
       }
-    }
-    @each $i,
-    $j in $vencord {
-      &.vencord-css-core#{$i}-tab:before {
-        background-image: url(#{$j});
-     }
     }
   }
 }

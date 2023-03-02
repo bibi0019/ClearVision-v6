@@ -1,0 +1,18 @@
+%settingsSidebar{
+
+// VENCORD ICON MAP
+    $vencord: ( //Settings
+    // Plugins
+    'plugins': 'https://clearvision.github.io/icons/puzzle.svg',
+    //Themes
+    'themes': 'https://clearvision.github.io/icons/palette.svg'
+  );
+
+    // VENCORD ICON STYLES
+    @each $i,
+    $u in $vencord {
+        %tabBarItem[aria-controls='vencord#{$i}-tab']:before {
+        background-image: url(#{$u});
+        }
+    }
+}
