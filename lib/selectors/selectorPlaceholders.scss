@@ -101,9 +101,11 @@
 .unfocused-1U-yOa {
   @extend %titlebarUnfocused !optional;
 }
+.typeWindows-3ILlhq, /*Canary Fix*/
 .typeWindows-2-g3UY {
   @extend %titlebarWin !optional;
 }
+.wordmark-3wYFg6, /*Canary Fix*/
 .wordmark-2u86JB {
   @extend %titlebarWordmark !optional;
 }
@@ -136,6 +138,9 @@
 }
 .macButtonMinimize-Q8clSI {
   @extend %titlebarMacButtonMinimize !optional;
+}
+.wrapper-3-JZ_Z {
+  @extend %repluggedInstallWrapper !optional;
 }
 #bda-qem {
   @extend %bdEmoteMenu !optional;
@@ -462,6 +467,7 @@
 .panels-3wFtMD {
   @extend %panels !optional;
 }
+.panel-ufc1-o, /*Canary Fix*/
 .panel-2ZFCRb {
   @extend %panel !optional;
 }
@@ -486,18 +492,23 @@
 .buttonActive-Uc1jHx {
   @extend %panelActionButtonActive !optional;
 }
+.container-1CH86i, /*Canary Fix*/
 .container-YkUktl {
   @extend %accountPanel !optional;
 }
+.avatarWrapper-12uuu4, /*Canary Fix*/
 .avatarWrapper-1B9FTW {
   @extend %accountPanelAvatarWrapper !optional;
 }
+.avatar-19siqs, /*Canary Fix*/
 .avatar-1EWyVD {
   @extend %accountPanelAvatar !optional;
 }
+.nameTag-2Q56-H, /*Canary Fix*/
 .nameTag-sc-gpq {
   @extend %accountPanelNameTag !optional;
 }
+.usernameContainer--2WsMy, /*Canary Fix*/
 .usernameContainer-3PPkWq {
   @extend %accountPanelUsernameContainer !optional;
 }
@@ -507,12 +518,15 @@
 .subtext-2HDqJ7 {
   @extend %accountPanelDiscriminator !optional;
 }
+.withTagAsButton-2_JkHX, /*Canary Fix*/
 .withTagAsButton-OsgQ9L {
   @extend %accountPanelTagButton !optional;
 }
+.withTagless-Lx3LMo, /*Canary Fix*/
 .withTagless-10ooWt {
   @extend %accountPanelTagless !optional;
 }
+.container-2NLBJg, /*Canary Fix*/
 .container-1zzFcN {
   @extend %connectionPanel !optional;
 }
@@ -713,12 +727,15 @@
 .speaking-7QZEkv {
   @extend %callTileSpeaking !optional;
 }
+.chat-9g_3Xj, /*Canary Fix*/
 .chat-2ZfjoI {
   @extend %chat !optional;
 }
+.content-18rAwf, /*Canary Fix*/
 .content-1jQy2l {
   @extend %chatContentWrapper !optional;
 }
+.chatContent-2O4SXb, /*Canary Fix*/
 .chatContent-3KubbW {
   @extend %chatContent !optional;
 }
@@ -746,6 +763,7 @@
 .actionRed-gYn8D3 {
   @extend %chatGatedActionRed !optional;
 }
+.resizeHandle-2F4Beb, /*Canary Fix*/
 .resizeHandle-PBRzPC {
   @extend %chatResize !optional;
 }
@@ -896,6 +914,7 @@ header-2TLOnc {
 .endContainer-22e-US {
   @extend %gifPickerEndContainer !optional;
 }
+.form-3qe0Ni, /*Canary Fix*/
 .form-3gdLxP {
   @extend %chatForm !optional;
 }
@@ -956,6 +975,7 @@ header-2TLOnc {
 .operations-3q3u6E {
   @extend %operations !optional;
 }
+.wrapper-IjGAlW, /*Canary Fix*/
 .wrapper-2SplAX {
   @extend %channelInfo !optional;
 }
@@ -1369,6 +1389,18 @@ header-2TLOnc {
 .premiumLabel-3HPvdB {
   @extend %premiumLabel !optional;
 }
+.card-20tMLf {
+  @extend %nitroSettingsCard !optional;
+}
+.bigPerkCard-1uwmWV {
+  @extend %nitroSettingsBig !optional;
+}
+.smallPerkCard-2sX_-- {
+  @extend %nitroSettingsSmall !optional;
+}
+.innerWrapper-Eo2E86 {
+  @extend %nitroSettingsInner !optional;
+}
 .icon-3FU6Ir {
   @extend %serverBoostIcon !optional;
 }
@@ -1480,7 +1512,7 @@ header-2TLOnc {
 .icon-2Ug6UV {
   @extend %guildBadgeIcon !optional;
 }
-.participating-2Z81oO {
+.isCurrentUserConnected-1GQb_C {
   @extend %guildBadgeParticipating !optional;
 }
 .placeholderMask-2FHNZU {
@@ -1879,15 +1911,23 @@ header-2TLOnc {
 .buttonShine-p5V5TB {
   @extend %libraryPlayButtonShine !optional;
 }
+.container-2vWgD2, /*Canary Fix*/
 .container-2o3qEW {
   @extend %membersContainer !optional;
 }
+.membersWrap-3GwLFp, /*Canary Fix*/
 .membersWrap-3NUR2t {
   @extend %membersWrap !optional;
 }
+.members-2y1nVj, /*Canary Fix*/
 .members-3WRCEx {
   @extend %members !optional;
 }
+.membersListNotices-3yhEwx, /*Canary Fix*/
+.membersListNotices-UstAx3 {
+  @extend %membersNotices !optional;
+}
+.membersGroup-2YoqY-, /*Canary Fix*/
 .membersGroup-2eiWxl {
   @extend %membersGroup !optional;
 }
@@ -1936,6 +1976,7 @@ header-2TLOnc {
 .icon-Lupfh- {
   @extend %memberActivityIcon !optional;
 }
+.memberGroupsPlaceholder-HII-9j, /*Canary Fix*/
 .memberGroupsPlaceholder-9tqX9V {
   @extend %memberGroupPlaceholder !optional;
 }
@@ -2480,6 +2521,15 @@ pre {
 .active-OdlCV- {
   @extend %forumFollowActive !optional;
 }
+.container-2_J666 {
+  @extend %forumGetStartedContainer !optional;
+}
+.stepContainer-SaPPyG {
+  @extend %forumGetStartedStep !optional;
+}
+.staticToolbar-x12NJC {
+  @extend %forumSettingsGuidelinesToolbar !optional;
+}
 .spoilerMarkdownContent-2R1Vwe {
   @extend %spoilerMarkdownContent !optional;
 }
@@ -2602,9 +2652,6 @@ pre {
 }
 .listRow-2nO1T6 {
   @extend %userModalListRow !optional;
-}
-.listAvatar-2GhWlb {
-  @extend %userModalListAvatar !optional;
 }
 .listRowContent-PEmSWj {
   @extend %userModalListRowConent !optional;
@@ -2774,35 +2821,11 @@ pre {
 .container-1ILvLB {
   @extend %connectionInfo !optional;
 }
-.header-2C89wJ {
-  @extend %connectionInfoHeader !optional;
-}
-.sparkline-3A-8OK {
-  @extend %connectionInfoSparkline !optional;
-}
 .popoutBottom-15-vLu {
   @extend %connectionInfoBottom !optional;
 }
 .secured-2wavXv {
   @extend %connectionInfoSecured !optional;
-}
-.contextMenu-HLZMGh {
-  @extend %contextMenu !optional;
-}
-.subMenuContext-2n_9YM {
-  @extend %subContextMenu !optional;
-}
-.itemGroup-1tL0uz {
-  @extend %contextMenuItemGroup !optional;
-}
-.item-1Yvehc {
-  @extend %contextMenuItem !optional;
-}
-.danger-2dXSTE {
-  @extend %contextMenuItemDanger !optional;
-}
-.brand-3igrJY {
-  @extend %contextMenuItemBrand !optional;
 }
 .itemSubMenu-1vN_Yn {
   @extend %contextMenuItemSubMenu !optional;
@@ -2962,42 +2985,6 @@ pre {
 }
 .item-2J1YMK {
   @extend %popoutItem !optional;
-}
-.popouts-2bnG9Z {
-  @extend %popouts !optional;
-}
-.popout-2iWAc- {
-  @extend %popout !optional;
-}
-.themedPopout-1TrfdI {
-  @extend %themedPopout !optional;
-}
-.popoutTop-3WSJtH {
-  @extend %popoutTop !optional;
-}
-.popoutTopRight-1lc8Mq {
-  @extend %popoutTopRight !optional;
-}
-.popoutTopLeft-3B0mFf {
-  @extend %popoutTopLeft !optional;
-}
-.popoutRight-1veHKi {
-  @extend %popoutRight !optional;
-}
-.popoutLeft-3aViER {
-  @extend %popoutLeft !optional;
-}
-.popoutBottom-2GAFPg {
-  @extend %popoutBottom !optional;
-}
-.popoutBottomRight-2Rno5S {
-  @extend %popoutBottomRight !optional;
-}
-.popoutBottomLeft-1pG8B4 {
-  @extend %popoutBottomLeft !optional;
-}
-.noArrow-2foL9g {
-  @extend %popoutNoArrow !optional;
 }
 .noShadow-3pu20z {
   @extend %popoutNoShadow !optional;
@@ -3490,6 +3477,9 @@ pre {
 .role-2TIOKu {
   @extend %role !optional;
 }
+.roleWrapper-2IhvNd {
+  @extend %roleWrapper !optional;
+}
 .roleCircle-3TFUOr {
   @extend %roleCircle !optional;
 }
@@ -3916,8 +3906,12 @@ pre {
 .contentPreview-3fWiuC {
   @extend %threadContentPreview !optional;
 }
+.container-3s2w-i, /*Canary Fix*/
 .container-3XgAHv {
   @extend %threadChat !optional;
+}
+.iconWrapper-3plkqh {
+  @extend %threadIconWrapper !optional;
 }
 .container-2rzKKA {
   @extend %threadPreview !optional;
@@ -4222,17 +4216,24 @@ pre {
 .container-3wLKDe {
   @extend %forumContainer !optional;
 }
-.container-2qVG6q {
+.container-q2_DnH {
   @extend %forumCardContainer !optional;
 }
 .mainCard-3KBsBI {
   @extend %forumCard !optional;
 }
-.channelName-1On3TJ {
+.increasedActivityMainCard-2ry6hI {
+  @extend %forumIncreasedCard !optional;
+}
+.title-2qfNnd,
+.postTitleText-3gRCnO {
   @extend %forumCardName !optional;
 }
-.isOpen-2OXbFs {
+.isOpen-2Gyel_ {
   @extend %forumOpenCard !optional;
+}
+.isOpen-2ldXbM {
+  @extend %forumIncreasedOpenCard !optional;
 }
 .loadingCard-3pIp9h {
   @extend %forumLoadingCard !optional;
@@ -4240,8 +4241,14 @@ pre {
 .headerRow-1MKoR- {
   @extend %forumHeaderRow !optional;
 }
-.headerBorder-jrk0Ic {
+.replies-15QcwL {
+  @extend %forumIncreasedReplyPreview !optional;
+}
+.tagsDivider-3LhkLA {
   @extend %forumHeaderBorder !optional;
+}
+.container-2nXUah {
+  @extend %forumNoConversations !optional;
 }
 .sortDropdown-hY93nR {
   @extend %forumSortDropdown !optional;
@@ -4255,6 +4262,9 @@ pre {
 .pill-3pRQlO {
   @extend %forumTag !optional;
 }
+.increasedActivityPill-1VhSrh {
+  @extend %forumIncreasedTag !optional;
+}
 .selected-24z1Ou {
   @extend %forumTagSelected !optional;
 }
@@ -4263,12 +4273,6 @@ pre {
 }
 .disabled-3Rezaw {
   @extend %forumTagDisabled !optional;
-}
-.sidebarCard-1Gn1ch {
-  @extend %forumGuidelineContainer !optional;
-}
-.container-2IhveL {
-  @extend %forumTagContainer !optional;
 }
 .pencilIcon-1d4fcw {
   @extend %forumPencilIcon !optional;
@@ -4294,7 +4298,7 @@ pre {
 .countContainer-3DOo5v {
   @extend %forumTagBoxCount !optional;
 }
-.contents-3ca1mk {
+.clear-2gkgln {
   @extend %forumTagClear !optional;
 }
 .countContainer-3uQ087 {
@@ -4336,11 +4340,11 @@ pre {
 .linkContainer-2xEQjX {
   @extend %forumRulesLinkContainer !optional;
 }
-.text-sm-bold-1Dtt0R {
-  @extend %textSmallBold !optional;
+.heading-lg-bold-242r2N {
+  @extend %headingLargeBold !optional;
 }
-.text-sm-semibold-3TWn25 {
-  @extend %textSmallSemibold !optional;
+.heading-lg-semibold-14ouVv {
+  @extend %headingLargeSemibold !optional;
 }
 .text-sm-medium-2-Xzsi {
   @extend %textSmallMedium !optional;
@@ -4456,4 +4460,124 @@ pre {
 }
 .overlay-1wSZ6w {
   @extend %serverExperienceGradient !optional;
+}
+.inviteRow-3vmB7i {
+  @extend %inviteModalRow !optional;
+}
+.inviteBannerUpsell-1t_LYM {
+  @extend %inviteModalUpsell !optional;
+}
+.temporaryMembershipContainerBackground-13Hf5U {
+  @extend %inviteModalTemporary !optional;
+}
+.tabBar-1_P75h {
+  @extend %customizeChannelsHeaderBar !optional;
+}
+.prompt-1sE27N {
+  @extend %customizeChannelsPrompt !optional;
+}
+.css-fcsbhh-control {
+  @extend %customizeChannelsSearch !optional;
+}
+.css-1t5q03r-control {
+  @extend %customizeChannelsSearchDropdown !optional;
+}
+.css-153nlb6-option {
+  @extend %customizeChannelsSearchOption !optional;
+}
+.css-6sv4e8-menu {
+  @extend %customizeChannelsSearchMenu !optional;
+}
+.selectValuePill-shyR_x {
+  @extend %customizeChannelsPill !optional;
+}
+.optionButtonWrapper-2lbogO {
+  @extend %customizeChannelsOption !optional;
+}
+.selected-KQBgNS {
+  @extend %customizeChannelsSelected !optional;
+}
+.profileCard-2gVmvm {
+  @extend %customizeChannelsProfile !optional;
+}
+.role-3uAPnQ {
+  @extend %customizeChannelsProfileRole !optional;
+}
+.container-27tlK1 {
+  @extend %browseChannels !optional;
+}
+.selectAll-1ZP46u {
+  @extend %browseChannelsSelectAll !optional;
+}
+.checked-1pZh2h {
+  @extend %browseChannelsChecked !optional;
+}
+.channelRow-4X_3fi {
+  @extend %browseChannelsRow !optional;
+}
+.disabled-3cfocy {
+  @extend %browseChannelsDisabled !optional;
+}
+.chatHeaderBar-31g1mU {
+  @extend %channelHeaderBar !optional;
+}
+.mainTableContainer-3Nxvkd {
+  @extend %membersChannelContainer !optional;
+}
+.table-2Z1caJ {
+  @extend %membersChannelTable !optional;
+}
+.memberRowContainer-ZDlmmA {
+  @extend %membersChannelRowContainer !optional;
+}
+.button-2XiUpU {
+  @extend %membersChannelButton !optional;
+}
+.otherRoles-LMys1u {
+  @extend %membersChannelRoleList !optional;
+}
+.pageButton-uta6J3 {
+  @extend %membersChannelPage !optional;
+}
+.optionBox-1UOevl {
+  @extend %avatarOptionBox !optional;
+}
+.contentCircle-15IFyT {
+  @extend %avatarOptionCircle !optional;
+}
+.uploadIcon-2zMtOT {
+  @extend %avatarUploadIcon !optional;
+}
+.gifIconContainer-3os21a {
+  @extend %avatarGifIconContainer !optional;
+}
+.decorationGridItem-3J_11G {
+  @extend %avatarDecoItem !optional;
+}
+.selected-IxbpGM {
+  @extend %avatarDecoItemSelected !optional;
+}
+.iconBadge-2grb37 {
+  @extend %avatarDecoItemBadge !optional;
+}
+.decorationPreview-1EtFuW {
+  @extend %avatarDecoPreview !optional;
+}
+.smallDecorationPreviewsContainer-3kMKqr {
+  @extend %avatarDecoPreviewSmall !optional;
+}
+.selected-11Gl-y {
+  @extend %messageReq !optional;
+}
+.selected-5uRER3 {
+  @extend %messageReqSpam !optional;
+}
+.messageRequestItem-1_NNAR {
+  @extend %messageReqItem !optional;
+}
+.active-1iRyqF {
+  @extend %messageReqActive !optional;
+}
+.hamBanner-2jDGhV {
+  @extend %messageReqSpamCheck !optional;
 }
