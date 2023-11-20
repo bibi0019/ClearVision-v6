@@ -153,6 +153,7 @@ $version: '1.0.1';
 // VENCORD
 @import 'src/injectors/ven/shiki.scss';
 @import 'src/injectors/ven/venSettings.scss';
+@import 'src/vencord/icons.scss';
 
 // REPLUGGED
 @import 'src/injectors/rp/gameActivityToggle.scss';
@@ -180,7 +181,3 @@ $version: '1.0.1';
 @import 'src/injectors/bd/plugins/DevilBro/tooltips';
 @import 'src/injectors/bd/plugins/Finicalmist/copyCode';
 @import 'src/injectors/bd/plugins/noodlebox/lineNumbers';
-
-// VENCORD
-@import 'src/vencord/icons.scss'
-
