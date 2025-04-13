@@ -1,7 +1,7 @@
 /* STUDENT HUBS */
 %base {
   %hubContainer {
-    background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.5));
+    background: rgba(0, 0, 0, calc($bg-shading * 0.5));
   }
 }
 
@@ -22,13 +22,13 @@
   margin-bottom: 0;
 }
 %hubCard {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
   transition: all 0.15s ease-in-out;
   &:hover {
     background-color: hsla(0, 0%, 0%, 0.6);
   }
   %hubCardIconMask {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: cv('bg.general.card');
     transition: all 0.15s ease-in-out;
   }
   %hubCardIcon {
@@ -55,7 +55,7 @@
       box-shadow: none;
     }
     %searchBoxInput {
-      color: var(--text-normal);
+      color: $text-normal;
       &::placeholder {
         color: hsla(0, 0%, 100%, 0.3);
       }
@@ -85,7 +85,7 @@
       box-shadow: none;
     }
     %searchBoxInput {
-      color: var(--text-normal);
+      color: $text-normal;
       &::placeholder {
         color: hsla(0, 0%, 100%, 0.3);
       }

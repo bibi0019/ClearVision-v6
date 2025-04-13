@@ -15,12 +15,10 @@
 %themeDark {
   %settingsCloseButton {
     border-color: hsla(0, 0%, 100%, 0.4);
+    color: hsla(0, 0%, 100%, 0.6);
     &:hover {
       border-color: hsla(0, 0%, 100%, 0.6);
       background-color: transparent;
-    }
-    > svg > path {
-      fill: hsla(0, 0%, 100%, 0.6);
     }
   }
   %settingsCloseButtonKeybind {
@@ -56,25 +54,20 @@
 }
 
 // ITEM CARDS
-%themeDark {
-  %settingsCard {
-    &:not(.outline_cb0aed),
-    &.outline_cb0aed {
-      background-color: rgba(0, 0, 0, 0.4);
-      border-color: hsla(0, 0%, 100%, 0.07);
-    }
-    a {
-      color: var(--url-color);
-    }
+%settingsCard {
+  &:not(%settingsCardOutline),
+  &%settingsCardOutline {
+    background-color: cv('bg.general.card');
+    border-color: hsla(0, 0%, 100%, 0.07);
   }
-}
-%settingsCardWrapper {
-  background-color: transparent;
+  %anchor {
+    color: var(--url-color);
+  }
 }
 
 // COLOR PICKER
 %themeDark %settingsColorPickerCustom {
-  background-color: hsla(0, 0%, 0%, 0.8);
+  background-color: cv('bg.general.popout');
   border-color: transparent;
   border-radius: 5px;
 }
@@ -88,26 +81,26 @@
 }
 
 // DROP DOWN
-.lookFilled__3dba3.select__0eb48 {
+%settingsLookFilled%settingsDropdownSelect {
   background-color: hsla(0, 0%, 100%, 0.07);
   border-color: hsla(0, 0%, 100%, 0.09);
 }
-.popout_a6e77f {
-  background-color: rgba(0, 0, 0, 0.8);
+%settingsDropdownPopout {
+  background-color: cv('bg.general.popout');
   border: none;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.option_be8b2e {
+%settingsDropdownOption {
   &:hover,
   &:focus,
-  &.focused_a2f507 {
+  &%settingsDropdownOptionFocused {
     background-color: hsla(0, 0%, 100%, 0.05);
     border: hsla(0, 0%, 100%, 0.07);
   }
-  &[aria-selected='true']:not(.option_be8b2e.multi__8d15f) {
+  &[aria-selected='true']:not(%settingsDropdownOption%settingsDropdownMulti) {
     background-color: $main-color;
-    .selectedIcon__4b0ba {
+    %settingsDropdownOptionSelectedIcon {
       circle {
         fill: $main-color;
       }
@@ -116,4 +109,18 @@
       fill: #fff;
     }
   }
+}
+
+// ohnyo
+%settingsAttendeeCTA:after {
+  content: 'ClearVision easter egg, please visit our server for a headpat :)';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  color: hsla(0, 0%, 100%, 0.7);
+  text-align: center;
+  top: 130%;
+  z-index: -1;
+  left: 0;
 }

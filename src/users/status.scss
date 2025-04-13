@@ -1,42 +1,37 @@
 /* STATUS */
-%avatarMask {
-  rect {
-    &[mask='url(#svg-mask-status-online)'],
-    &[mask='url(#svg-mask-status-online-mobile)'] {
-      fill: var(--online-color);
-    }
-    &[mask='url(#svg-mask-status-idle)'] {
-      fill: var(--idle-color);
-    }
-    &[mask='url(#svg-mask-status-dnd)'] {
-      fill: var(--dnd-color);
-    }
-    &[mask='url(#svg-mask-status-streaming)'] {
-      fill: var(--streaming-color);
-    }
-    &[mask='url(#svg-mask-status-offline)'] {
-      fill: var(--offline-color);
-    }
+/*status picker*/
+%statusPickerIcon {
+  &[style*='rgb(128, 132, 142)'] {
+    background-color: cv('colors.offline') !important;
+  }
+  &[style*='rgb(35, 165, 90)'] {
+    background-color: cv('colors.online') !important;
+  }
+  &[style*='rgb(240, 178, 50)'] {
+    background-color: cv('colors.idle') !important;
+  }
+  &[style*='rgb(242, 63, 67)'] {
+    background-color: cv('colors.dnd') !important;
   }
 }
 
-// USER PROFILE
-%userProfileStatus {
-  rect {
-    &[mask='url(#svg-mask-status-online)'] {
-      fill: var(--online-color);
-    }
-    &[mask='url(#svg-mask-status-idle)'] {
-      fill: var(--idle-color);
-    }
-    &[mask='url(#svg-mask-status-dnd)'] {
-      fill: var(--dnd-color);
-    }
-    &[mask='url(#svg-mask-status-streaming)'] {
-      fill: var(--streaming-color);
-    }
-    &[mask='url(#svg-mask-status-offline)'] {
-      fill: var(--offline-color);
-    }
+/*member list, profile*/
+%avatarMask rect {
+  &[fill*='#80848e'] {
+    fill: cv('colors.offline');
+  }
+  &[fill*='#23a55a'] {
+    fill: cv('colors.online');
+  }
+  &[fill*='#f0b232'] {
+    fill: cv('colors.idle');
+  }
+  &[fill*='#f23f43'] {
+    fill: cv('colors.dnd');
+  }
+  &[fill*='#593695'] {
+    fill: cv('colors.streaming');
   }
 }
+/*note: we have to use fill by color anyway for some dumb cases, so 
+the mask part is useless lol*/

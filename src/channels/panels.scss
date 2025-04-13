@@ -2,59 +2,27 @@
 %panels {
   background: transparent;
   > :first-child {
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.3));
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, calc($bg-shading * 0.3));
   }
 }
-%themeDark %panel {
-  background-color: transparent;
+%themeDark {
+  %panel,
+  %panelContainer {
+    background-color: transparent;
+  }  
 }
 
 // ACCOUNT & CONNECTION PANELS
-%accountPanel {
-  > %flex {
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
-    > :nth-child(n + 2) {
-      position: relative;
-      margin-left: -1px;
-      &:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 2px;
-        bottom: 2px;
-        width: 1px;
-        background: hsla(0, 0%, 100%, 0.2);
-      }
-    }
+/* Account for account panel width scaling under
+  new design */
+%themeDark %accountPanelAvatarWrapper {
+  min-width: calc(var(--channels-width) - 120px);
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.1);
   }
 }
 
 // BUTTONS
-button%panelButton {
-  width: 32px;
-  height: 32px;
-  opacity: 1;
-  > %buttonContents > svg {
-    @include bg($rep: no-repeat, $pos: center, $size: 18px);
-    color: #fff;
-    opacity: 0.5;
-    transition: all 0.1s ease-in-out;
-  }
-  &:hover {
-    &%panelButtonEnabled {
-      background: transparent;
-    }
-    > %buttonContents > svg {
-      opacity: 0.7;
-    }
-  }
-  &%panelButtonDisabled {
-    > %buttonContents > svg {
-      opacity: 0.1;
-    }
-  }
-}
 %panelActionButtons {
   grid-gap: 6px;
 }
@@ -68,48 +36,16 @@ button%panelButton {
         background: hsla(0, 0%, 100%, 0.95);
         color: $hover-color;
       }
+      %panelActionButtonLottieIcon {
+        --__lottieIconColor: currentcolor !important;
+      }
     }
   }
 }
 
 // ACCOUNT PANEL
-%themeDark %accountPanel {
+%themeDark %panelContainer {
   position: relative;
-  background: transparent;
-  margin-bottom: 10px;
-  &:before,
-  &:after {
-    bottom: -8px;
-    position: absolute;
-    color: hsla(0, 0%, 100%, 0.3);
-    font-size: 11px;
-    font-weight: 700;
-    transition: all 0.5s ease-in-out;
-  }
-  &:before {
-    content: cv('const:text.account.main');
-    right: 50%;
-    text-align: right;
-    transform: translateX(50%);
-  }
-  &:after {
-    content: cv('const:text.account.version');
-    left: 50%;
-    text-align: left;
-    opacity: 0;
-    transform: translateX(50%) rotateX(90deg);
-  }
-  &:hover {
-    &:before {
-      margin-right: 1px;
-      transform: none;
-    }
-    &:after {
-      margin-left: 1px;
-      opacity: 1;
-      transform: none;
-    }
-  }
   // SOME POSITIONING
   %accountPanelTagButton,
   %accountPanelTagless {
@@ -122,8 +58,6 @@ button%panelButton {
   }
   // AVATAR
   %accountPanelAvatar {
-    width: 32px !important;
-    height: 32px !important;
     transition: all 0.15s ease-in-out;
     &:after {
       content: 'Status';
@@ -143,12 +77,9 @@ button%panelButton {
       transition: all 0.15s ease-in-out;
     }
     &:hover {
-      width: 40px !important;
-      height: 40px !important;
       opacity: 1;
       &:after {
         font-size: 10px;
-        line-height: 40px;
         opacity: 1;
       }
       foreignObject {
@@ -156,22 +87,10 @@ button%panelButton {
       }
     }
   }
-  // NAME TAG
-  %accountPanelUsername {
-    color: #fff;
-  }
-  %accountPanelDiscriminator {
-    color: hsla(0, 0%, 100%, 0.3);
-  }
 }
 
 // CONNECTION PANEL
 %connectionPanel {
-  > %flex {
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    padding: 5px;
-  }
   border-color: transparent;
   background: transparent;
   %connectionPanelInner {
@@ -225,4 +144,34 @@ button%panelButton {
 // NOISE CANCELLATION POPOUT
 %noiseCancellationPopout {
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+// QUEST PANEL
+%themeDark %questPanel {
+  background: transparent;
+}
+%questPanelAccepted {
+  background: transparent !important;
+}
+%questPanelAcceptedExpandedBackground {
+  background: transparent !important;
+  border-top: 2px solid hsla(0, 0%, 100%, 0.05);
+}
+%questPanelContentExpanded {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px 8px 0 0;
+}
+%questPanelAcceptedExpandedContent {
+  visibility: hidden;
+  %questPanelExpanded & {
+    visibility: visible;
+  }
+}
+
+// SPOTIFY/YT MUSIC MAYBE?/IDK
+%listeningAlongPanel {
+  background: transparent;
+  %panelTitle {
+    color: $main-color;
+  }
 }
